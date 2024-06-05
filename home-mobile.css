@@ -1,4 +1,4 @@
-@media screen and (min-width:350px) and (max-width:	768px) {
+@media screen and (min-width:350px) and (max-width:768px) {
     #header-container{
         position: fixed;
         display: flex;
@@ -169,13 +169,11 @@
     #tile2-left #content p:last-child{
         text-decoration: underline;
         text-decoration-thickness: 5px;
-        text-underline-offset: -.1px;
         text-decoration-color: rgba(255, 255, 0, 0.553);
     }
     #tile3-right #content p:last-child{
         text-decoration: underline;
         text-decoration-thickness: 5px;
-        text-underline-offset: -.1px;
         text-decoration-color: #fd786780;
     }
 }
