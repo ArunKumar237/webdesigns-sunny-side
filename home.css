@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    width: 6px;
+    background-color: rgb(255, 127, 127);
+}
+::-webkit-scrollbar-thumb{
+    background-color: hsl(167, 40%, 24%);
+    border-radius: 10px;
+    cursor: grab;
+}
+::-webkit-scrollbar-thumb:active{
+    cursor: grabbing;
+}
+
+#header-container{
+    position: absolute;
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+#header-left{
+    margin-left: 4vw;
+}
+#header-right ul{
+    display: flex;
+    gap: 40px;
+    align-items: baseline;
+    margin-right: 2vw;
+}
+#header-right ul li{
+    list-style: none;
+    font-family: "Barlow", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+#header-right ul li a{
+    text-decoration: none;
+    color: white;
+}
+#header-right ul li:last-child a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+#header-right ul li a:hover{
+    cursor: pointer;
+}
+#header-right ul li:nth-child(4){
+    padding: 15px 25px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-family: "Fraunces", serif;
+    border-radius: 30px;
+    font-weight: 700;
+}
+#header-right img{
+    display: none;
+}
+
+#tile1{
+    height: 95vh;
+    width: 100%;
+    background-image: url(./images/desktop/image-header.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#title1-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 7vh;
+    margin-bottom: 30vh;
+}
+#title1-content p{
+    font-size: 45px;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    letter-spacing: 8px;
+    color: white;
+}
+#tile2{
+    display: flex;
+    width: 100%;
+    height: 90vh;
+}
+#tile2-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+#content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 70%;
+}
+#content p:first-child{
+    font-size: 40px;
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    color: hsl(212, 27%, 19%);
+    width: 80%;
+}
+#content p:nth-child(2){
+    font-size: 20px;
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    color: hsl(210, 4%, 67%);
+}
+#content p:last-child{
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    margin-left: 15px;
+    color: hsl(212, 27%, 19%);
+}
+#tile2-right{
+    width: 50%;
+    height: 100%;
+    background-image: url(./images/desktop/image-transform.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#tile3{
+    display: flex;
+    width: 100%;
+    height: 90vh;
+}
+#tile3-left{
+    width: 50%;
+    height: 100%;
+    background-image: url(./images/desktop/image-stand-out.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#tile3-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+#tile4{
+    display: flex;
+    width: 100%;
+    height: 80vh;
+}
+#tile4-left{
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#tile4-right{
+    background-image: url(./images/desktop/image-photography.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#tile4-left, #tile4-right{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: end;
+}
+
+.title4-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    width: 47%;
+    height: 50%;
+    /* border: 1px solid black; */
+}
+
+.title4-content p:first-child{
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 25px;
+    margin-left: 15px;
+    color: hsl(212, 27%, 19%);
+}
+.title4-content p:last-child{
+    font-family: "Barlow", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: hsl(167, 40%, 24%);
+}
+
+#tile5{
+    display: flex;
+    align-items: center;
+    height: 95%;
+    width: 100%;
+    margin: 80px 0px;
+}
+#tile5-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+#tile5-heading{
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 20px;
+    color:hsl(232, 10%, 55%);
+    letter-spacing: 8px;
+    margin-bottom: 30px;
+}
+#testimonials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+#emily, #thomas, #jennie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    gap: 50px;
+}
+#emily p, #thomas p, #jennie p{
+    font-family: "Barlow", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    color: hsl(167, 40%, 24%);
+}
+#emily img, #thomas img, #jennie img{
+    width: 70px;
+    border-radius: 50%;
+}
+#emily div, #thomas div, #jennie div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+#emily div p:first-child, #thomas div p:first-child, #jennie div p:first-child{
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: hsl(212, 27%, 19%);
+}
+#tile6{
+    height: 67.1vh;
+    width: 100%;
+    display: flex;
+}
+#tile6 div{
+    width: 25%;
+    height: 100%
+}
+#tile6-1{
+    background-image: url(./images/desktop/image-gallery-milkbottles.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+#tile6-2{
+    background-image: url(./images/desktop/image-gallery-orange.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+#tile6-3{
+    background-image: url(./images/desktop/image-gallery-cone.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+#tile6-4{
+    background-image: url(./images/desktop/image-gallery-sugarcubes.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+#footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+    background-color: rgba(140,211,197,255);
+}
+#footer-left{
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    justify-content: center;
+}
+#footer-left img{
+    width: 180px;
+    filter: brightness(0) saturate(100%) invert(35%) sepia(55%) saturate(429%) hue-rotate(118deg) brightness(97%) contrast(89%);
+}
+#footer-right{
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    justify-content: center;
+}
+
+#footer-menu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    font-size: 18px;
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+}
+#footer-menu li{
+    list-style: none;
+}
+#footer-menu li a{
+    text-decoration: none;
+    color: hsl(167, 40%, 24%);
+}
+#logos{
+    margin: 80px 0px 0px 0px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    gap: 2rem;
+}
+#tile2-left #content p:last-child{
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    text-decoration-color: rgba(255, 255, 0, 0.553);
+}
+#tile3-right #content p:last-child{
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    text-decoration-color: #fd786780;
+}
+
+
